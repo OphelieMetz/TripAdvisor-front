@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 55px;
   font-weight: bold;
 }
 
@@ -29,15 +29,94 @@ h1 span {
 /* HEADER */
 /* HEADER */
 
-header > div.wrapper > div.position {
+header > div.wrapper {
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+header > div.wrapper > div.logosearch {
   display: flex;
   flex-direction: row;
 }
 
-header > div.wrapper > div.position div.menu {
+header > div.wrapper > div.logosearch > div.searchbar {
+  display: flex;
+  margin-left: 30px;
+  padding: 10px 200px 10px 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #dee1df;
+  border-radius: 20px;
+  color: #757575;
+}
+
+header > div.wrapper > div.position {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+}
+
+header > div.wrapper > div.position > div.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+}
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+header > div.wrapper > div.position > div.menu > div.avis {
+  display: flex;
+  margin: 0 10px;
+}
+
+header > div.wrapper > div.position > div.menu > div.avis > p {
+  margin-left: 4px;
+}
+
+header > div.wrapper > div.position > div.menu > div.voyages {
+  display: flex;
+  margin: 0 10px;
+}
+
+header > div.wrapper > div.position > div.menu > div.voyages > p {
+  margin-left: 4px;
+}
+
+header > div.wrapper > div.position > div.menu > div.alertes {
+  display: flex;
+  margin: 0 10px;
+}
+
+header > div.wrapper > div.position > div.menu > div.alertes > p {
+  margin-left: 4px;
+}
+
+header > div.wrapper > div.position > div.menu > div.panier {
+  display: flex;
+  margin: 0 10px;
+}
+
+header > div.wrapper > div.position > div.menu > div.panier > p {
+  margin-left: 4px;
+}
+
+button.connectezvous {
+  color: white;
+  background-color: black;
+  padding: 10px 12px 10px 12px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: TS-Reg, sans-serif;
+  border-radius: 20px;
+  border: none;
 }
 
 header img {
@@ -49,10 +128,81 @@ header img {
 /* BODY */
 /* BODY */
 
-nav {
+h1 {
+  margin-top: 20px;
+}
+
+main > div > p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* NAV */
+/* NAV */
+/* NAV */
+
+.nav1 {
   display: flex;
   flex-direction: row;
+  margin-bottom: 26px;
+  margin-top: 30px;
 }
+
+.nav1 div {
+  border: solid 1px black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.nav1 > div.hotels {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.nav1 > div.locations {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.nav1 > div.activites {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.nav1 > div.restaurants {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.nav1 > div.forums {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.nav1 > div.plus {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* PHOTOS */
+/* PHOTOS */
+/* PHOTOS */
 
 .photos {
   display: flex;
@@ -68,6 +218,77 @@ nav {
 
 .sidephotos img {
   height: 200px;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.underphotos {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+/* VISITE PORTO */
+
+.visiteporto {
+  display: flex;
+  margin-top: 40px;
+}
+
+.visiteporto div.text {
+  margin-right: 60px;
+}
+
+div.text > h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+div.text > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.portomap {
+  display: flex;
+  flex-direction: column;
+}
+
+.portomap div.toptext {
+  background-color: #fe5d5d;
+  border-radius: 15px 15px 0 0;
+  padding: 33px;
+}
+.portomap div.toptext > h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.portomap div.toptext > p {
+  margin: 20px 0;
+  line-height: 20px;
+}
+.portomap div.toptext > button {
+  font-family: TS-Reg, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 15px;
+  font-size: 15px;
+}
+
+.portomap > img {
+  height: 250px;
+  border-radius: 0 0 15px 15px;
 }
 
 /* FOOTER */
