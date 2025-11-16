@@ -42,6 +42,10 @@ header > div.wrapper > div.logosearch {
   flex-direction: row;
 }
 
+div.logosearch > img {
+  cursor: pointer;
+}
+
 header > div.wrapper > div.logosearch > div.searchbar {
   display: flex;
   margin-left: 30px;
@@ -72,39 +76,66 @@ header > div.wrapper > div.position > div.menu {
 /* MENU */
 /* MENU */
 
-header > div.wrapper > div.position > div.menu > div.avis {
+div.avis {
   display: flex;
-  margin: 0 10px;
+  padding: 0 10px;
+}
+div.avis:hover {
+  background-color: #e5e5e5;
+  border-radius: 17px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-header > div.wrapper > div.position > div.menu > div.avis > p {
+div.avis > p {
   margin-left: 4px;
 }
 
-header > div.wrapper > div.position > div.menu > div.voyages {
+div.voyages {
   display: flex;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
-header > div.wrapper > div.position > div.menu > div.voyages > p {
+div.voyages:hover {
+  background-color: #e5e5e5;
+  border-radius: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.voyages > p {
   margin-left: 4px;
 }
 
-header > div.wrapper > div.position > div.menu > div.alertes {
+div.alertes {
   display: flex;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
-header > div.wrapper > div.position > div.menu > div.alertes > p {
+div.alertes:hover {
+  background-color: #e5e5e5;
+  border-radius: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.alertes > p {
   margin-left: 4px;
 }
 
-header > div.wrapper > div.position > div.menu > div.panier {
+div.panier {
   display: flex;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
-header > div.wrapper > div.position > div.menu > div.panier > p {
+div.panier:hover {
+  background-color: #e5e5e5;
+  border-radius: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.panier > p {
   margin-left: 4px;
 }
 
@@ -117,6 +148,12 @@ button.connectezvous {
   font-family: TS-Reg, sans-serif;
   border-radius: 20px;
   border: none;
+  margin-left: 7px;
+}
+
+button.connectezvous:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 header img {
@@ -161,6 +198,12 @@ main > div > p {
   flex-direction: row;
   margin-right: 10px;
 }
+
+.nav1 > div.hotels:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 .nav1 > div.locations {
   flex: 1;
   display: flex;
@@ -168,13 +211,23 @@ main > div > p {
   flex-direction: row;
   margin-right: 10px;
 }
-
+.nav1 > div.locations:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 .nav1 > div.activites {
   flex: 1;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin-right: 10px;
+}
+
+.nav1 > div.activites:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .nav1 > div.restaurants {
@@ -185,6 +238,12 @@ main > div > p {
   margin-right: 10px;
 }
 
+.nav1 > div.restaurants:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 .nav1 > div.forums {
   flex: 1;
   display: flex;
@@ -193,11 +252,23 @@ main > div > p {
   margin-right: 10px;
 }
 
+.nav1 > div.forums:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 .nav1 > div.plus {
   flex: 1;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.nav1 > div.plus:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 /* PHOTOS */
@@ -284,6 +355,10 @@ div.text > p {
   border: none;
   padding: 20px 15px;
   font-size: 15px;
+}
+.portomap div.toptext > button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .portomap > img {
