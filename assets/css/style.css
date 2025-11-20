@@ -1,5 +1,9 @@
 /* GENERAL */
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   width: 1100px;
   margin: 0 auto;
@@ -8,6 +12,10 @@
 header {
   /*  position: fixed; */
   border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  margin-top: 10px;
+  position: sticky;
+  top: 0px;
 }
 
 body {
@@ -17,10 +25,17 @@ body {
 h1 {
   font-size: 55px;
   font-weight: bold;
+  font-family: TS-Med, sans serif;
 }
 
 h1 span {
   color: #fe5d5d;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: TS-Med, sans serif;
 }
 
 /* HEADER */
@@ -30,7 +45,6 @@ h1 span {
 /* HEADER */
 
 header > div.wrapper {
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
@@ -274,21 +288,37 @@ main > div > p {
 /* PHOTOS */
 /* PHOTOS */
 /* PHOTOS */
-
-.photos {
+.main-picture-div {
+  height: 430px;
+  /* background-color: pink; */
   display: flex;
+  gap: 2px;
+}
+
+.main-picture-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-picture-div-left {
+  /* background-color: lightseagreen; */
   flex: 1;
 }
-.photos > img {
-  height: 400px;
-}
-.sidephotos {
-  display: flex;
-  flex-direction: column;
+.main-picture-div-right {
+  width: 480px;
+  /* background-color: lightgreen; */
 }
 
-.sidephotos img {
-  height: 200px;
+.main-picture-div-right-up {
+  height: calc(50% - 1px);
+  /* background-color: red; */
+  margin-bottom: 2px;
+}
+
+.main-picture-div-right-down {
+  height: calc(50% - 1px);
+  /* background-color: blue; */
 }
 
 .menu2 {
@@ -315,8 +345,6 @@ main > div > p {
 }
 
 div.text > h2 {
-  font-size: 25px;
-  font-weight: bold;
   margin-bottom: 45px;
 }
 
@@ -364,6 +392,43 @@ div.text > p {
 .portomap > img {
   height: 250px;
   border-radius: 0 0 15px 15px;
+}
+
+/* SECTION */
+/* SECTION */
+/* SECTION */
+
+.immanquables {
+  margin-top: 80px;
+}
+
+.left-column h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.caroussel-1 {
+  display: flex;
+}
+
+.caroussel-1 > .left-column {
+  border: solid 2px blueviolet;
+  width: 800px;
+  /* flex: 3; */
+}
+
+.caroussel-1 .right-column {
+  border: solid 2px teal;
+  display: flex;
+  /* flex: 7; */
+}
+
+.caroussel-1 .right-column .activites {
+  height: 160px;
+  width: 250px;
+  border: pink solid 2px;
+  gap: 14px;
 }
 
 /* FOOTER */
