@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  width: 1100px;
+  max-width: 1135px;
   margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@ header {
   /*  position: fixed; */
   border-bottom: 1px solid #e0e0e0;
   background-color: white;
-  margin-top: 10px;
+  padding-top: 10px;
   position: sticky;
   top: 0px;
 }
@@ -205,7 +205,7 @@ main > div > p {
   padding: 15px;
 }
 
-.nav1 > div.hotels {
+.nav1 > div.element-nav {
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -213,73 +213,7 @@ main > div > p {
   margin-right: 10px;
 }
 
-.nav1 > div.hotels:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-.nav1 > div.locations {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-right: 10px;
-}
-.nav1 > div.locations:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-.nav1 > div.activites {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-right: 10px;
-}
-
-.nav1 > div.activites:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.nav1 > div.restaurants {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-right: 10px;
-}
-
-.nav1 > div.restaurants:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.nav1 > div.forums {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-right: 10px;
-}
-
-.nav1 > div.forums:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.nav1 > div.plus {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.nav1 > div.plus:hover {
+.nav1 > div.element-nav:hover {
   background-color: black;
   color: white;
   cursor: pointer;
@@ -402,33 +336,137 @@ div.text > p {
   margin-top: 80px;
 }
 
+.immanquables > h2 {
+  margin-bottom: 30px;
+}
+
 .left-column h3 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 30px;
   font-weight: bold;
 }
 
-.caroussel-1 {
+.caroussel {
   display: flex;
+  height: 300px;
 }
 
-.caroussel-1 > .left-column {
-  border: solid 2px blueviolet;
-  width: 800px;
-  /* flex: 3; */
+.left-column {
+  /* border: solid 2px blueviolet; */
+  width: 30%;
 }
 
-.caroussel-1 .right-column {
-  border: solid 2px teal;
+.left-column > p {
+  padding: 20px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.left-column > button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-family: TS-Reg, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0;
+  color: #545454;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.right-column {
+  /* border: solid 2px teal; */
   display: flex;
-  /* flex: 7; */
-}
-
-.caroussel-1 .right-column .activites {
-  height: 160px;
-  width: 250px;
-  border: pink solid 2px;
   gap: 14px;
+  overflow: scroll;
+  flex: 1;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.right-column .activites {
+  height: 100%;
+  width: calc((100% - 28px) / 3);
+  /* border: pink solid 2px; */
+  flex-shrink: 0;
+}
+
+.img-carrousel {
+  height: 180px;
+  position: relative;
+}
+
+.immanquables img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-item-absolute {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.right-column h3 {
+  font-size: 18px;
+  font-family: TS-Reg, sans-serif;
+  font-weight: bold;
+  margin: 7px 0;
+}
+
+.right-column p {
+  color: #555555;
+  font-size: 14px;
 }
 
 /* FOOTER */
+
+footer {
+  height: 157px;
+  background-color: #f9f1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1135px) {
+  header {
+    background-color: lightpink;
+  }
+
+  .nav1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .element-nav {
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: antiquewhite;
+  }
+
+  header .avis {
+    display: none;
+  }
+  header .voyages {
+    display: none;
+  }
+  header .alertes {
+    display: none;
+  }
+  header .connectezvous {
+    display: none;
+  }
+  header div.searchbar {
+    display: none;
+  }
+  .searchbar > img {
+    justify-content: center;
+  }
+}
