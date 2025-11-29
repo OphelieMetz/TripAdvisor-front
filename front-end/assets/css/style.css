@@ -447,6 +447,7 @@ footer {
   position: fixed;
   top: 0;
   z-index: 2;
+  display: none;
 }
 
 .form-container {
@@ -526,6 +527,11 @@ input[type="submit"] {
   border: none;
   border-radius: 6px;
   font-family: TS-Reg, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
 }
 
 /* ******* MEDIA ******* */
